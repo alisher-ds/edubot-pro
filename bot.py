@@ -9,8 +9,8 @@ import json
 import logging
 import os
 import re
-from datetime import datetime
-
+from datetime import datetime, timedelta, timezone
+TZ = timezone(timedelta(hours=5))
 from aiogram import Bot, Dispatcher, F, Router
 from aiogram.filters import Command, CommandStart
 from aiogram.fsm.context import FSMContext
